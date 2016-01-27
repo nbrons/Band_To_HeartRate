@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources targetOsVersion="6.3.1" targetPlatform="WindowsPhone" majorVersion="1">
-  <index root="\" startIndexAt="obj\Debug\Microsoft.Band\layout.resfiles">
+  <index root="\" startIndexAt="obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\layout.resfiles">
     <default>
-      <qualifier name="Language" value="en" />
+      <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="240" />
       <qualifier name="HomeRegion" value="001" />
@@ -14,9 +14,9 @@
     </default>
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
-  <index root="\" startIndexAt="obj\Debug\Microsoft.Band\Resources.resfiles">
+  <index root="\" startIndexAt="obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\Resources.resfiles">
     <default>
-      <qualifier name="Language" value="en" />
+      <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="240" />
       <qualifier name="HomeRegion" value="001" />
@@ -30,9 +30,9 @@
     <indexer-config type="RESJSON" />
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
-  <index root="\" startIndexAt="obj\Debug\Microsoft.Band\pri.resfiles">
+  <index root="\" startIndexAt="obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\pri.resfiles">
     <default>
-      <qualifier name="Language" value="en" />
+      <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="240" />
       <qualifier name="HomeRegion" value="001" />

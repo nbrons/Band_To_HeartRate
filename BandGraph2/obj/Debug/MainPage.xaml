@@ -7,20 +7,49 @@
     xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     x:Class="BandGraph2.MainPage"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="SteelBlue">
 
     <ListView>
 
-        <TextBlock x:Name="HR" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Light" Width="122" Height="65" Foreground="White" FontSize="48"/>
+        <TextBlock x:Name="HR" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Light" Width="122" Height="65" Foreground="White" FontSize="48" Text="HR"/>
 
-        <Button x:ConnectionId='1' x:Name="Button" Content="Start"                />
-        <Button x:ConnectionId='2' x:Name="Button2" Content="Stop"                    />
-
-        <Charting:Chart x:Name="LineChart" Height="411" Width="600">
-            <Charting:LineSeries Margin="0" IndependentValuePath="date" DependentValuePath="rate" IsSelectionEnabled="True"/>
+        <Charting:Chart x:Name="LineChart" Height="511" Width="500">
+            <Charting:LineSeries Margin="0" IndependentValuePath="date" DependentValuePath="rate" IsSelectionEnabled="True">
+                <Charting:LineSeries.DataPointStyle>
+                    <Style TargetType="Charting:LineDataPoint">
+                        <Setter Property="Width" Value="7" />
+                        <Setter Property="Height" Value="7" />
+                        <Setter Property="Background" Value="Orange"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Charting:LineDataPoint">
+                                    <Ellipse Fill="DodgerBlue" Stroke="DodgerBlue" StrokeThickness="1" />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Charting:LineSeries.DataPointStyle>
+            </Charting:LineSeries>
+            <Charting:Chart.LegendStyle>
+                <Style TargetType="Control">
+                    <Setter Property="Width" Value="0"/>
+                    <Setter Property="Height" Value="0"/>
+                </Style>
+            </Charting:Chart.LegendStyle>
         </Charting:Chart>
 
-        <Button x:ConnectionId='3' x:Name="ExportButton" Content="Export"                    />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:ConnectionId='2' x:Name="Button" Background="DodgerBlue" Content="Start"                 Grid.Column="0"/>
+            <Button x:ConnectionId='3' x:Name="Button2" Background="DodgerBlue" Content="Stop"                     Grid.Column="1" Margin="9.833,0,-9.667,0"/>
+
+        </Grid>
+        <Button x:ConnectionId='1' x:Name="ExportButton" Background="DodgerBlue" Content="Export"                    />
         
     </ListView>
 </Page>

@@ -72,13 +72,16 @@ namespace BandGraph2
             toggled = false;
         }
 
+
         private async void toCSV()
         {
             FileSavePicker savePicker = new FileSavePicker();
             savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+           
             // Dropdown of file types the user can save the file as
             savePicker.FileTypeChoices.Add("CSV", new List<string>() { ".csv" });
             savePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt" });
+           
             // Default file name if the user does not type one in or select a file to replace
             savePicker.SuggestedFileName = "Exported_Readings";
 
@@ -87,9 +90,9 @@ namespace BandGraph2
             {
                 // Prevent updates to the remote version of the file until we finish making changes and call CompleteUpdatesAsync.
                 CachedFileManager.DeferUpdates(file);
+                
                 // write to file
                 await FileIO.WriteTextAsync(file, "\"Time\",\"Heart Rate\"\n");
-
                 foreach( Reading reading in readingList) {
                     await FileIO.AppendTextAsync(file, reading.date+","+reading.rate+"\n");
                 }
