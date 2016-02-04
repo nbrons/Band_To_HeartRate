@@ -25,6 +25,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Series" />
       <RootProperty Name="LegendStyle" />
+      <RootProperty Name="Axes" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="ColumnDefinitions" />
@@ -69,6 +70,20 @@
       <RootProperty Name="Fill" />
       <RootProperty Name="Stroke" />
       <RootProperty Name="StrokeThickness" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LinearAxis">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="ShowGridLines" />
+      <RootProperty Name="GridLineStyle" />
+      <RootProperty Name="AxisLabelStyle" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisLabel" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="Stroke" />
     </RootType>
     <RootType FullName="BandGraph2.MainPage" />
   </Roots.RootTypes>

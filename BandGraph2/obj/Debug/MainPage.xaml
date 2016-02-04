@@ -36,6 +36,24 @@
                     <Setter Property="Height" Value="0"/>
                 </Style>
             </Charting:Chart.LegendStyle>
+            <Charting:Chart.Axes>
+                <Charting:LinearAxis Orientation="Y" ShowGridLines="True">
+                    <Charting:LinearAxis.GridLineStyle>
+                        <Style TargetType="Line">
+                            <Setter Property="Stroke" Value="DarkBlue" />
+                        </Style>
+                    </Charting:LinearAxis.GridLineStyle>
+
+                </Charting:LinearAxis>
+
+                <Charting:LinearAxis Orientation="X" ShowGridLines="False">
+                    <Charting:LinearAxis.AxisLabelStyle>
+                        <Style TargetType="Charting:AxisLabel">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </Charting:LinearAxis.AxisLabelStyle>
+                </Charting:LinearAxis>
+            </Charting:Chart.Axes>
         </Charting:Chart>
 
 
