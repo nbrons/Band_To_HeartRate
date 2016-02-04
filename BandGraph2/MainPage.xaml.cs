@@ -162,11 +162,11 @@ namespace BandGraph2
         public async void getBands()
         {
             ExportButton.IsEnabled = false;
-            var bandManager = BandClientManager.Instance;
-            IBandInfo[] pairedBands = await bandManager.GetBandsAsync();
 
             try
             {
+                var bandManager = BandClientManager.Instance;
+                IBandInfo[] pairedBands = await bandManager.GetBandsAsync();
                 using (IBandClient bandClient = await BandClientManager.Instance.ConnectAsync(pairedBands[0]))
                 {
 
@@ -217,9 +217,11 @@ namespace BandGraph2
                     ExportButton.IsEnabled = true;
                 }
             }
-            catch (BandException)
+            catch (Exception) //changed to generic exception, so the error of the list of bands being 0 or null can be thrown (if no band is connected)
             {
-                
+                MessageDialog md = new MessageDialog("Band not connected");
+                md.ShowAsync();
+                ExportButton.IsEnabled = true;
             }
 
         }
