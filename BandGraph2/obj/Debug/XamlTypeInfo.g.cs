@@ -371,6 +371,7 @@ namespace BandGraph2.BandGraph2_XamlTypeInfo
                 userType.Activator = Activate_0_Chart;
                 userType.SetContentPropertyName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series");
                 userType.AddMemberName("Series");
+                userType.AddMemberName("Title");
                 userType.AddMemberName("LegendStyle");
                 userType.AddMemberName("Axes");
                 userType.AddMemberName("ActualAxes");
@@ -379,7 +380,6 @@ namespace BandGraph2.BandGraph2_XamlTypeInfo
                 userType.AddMemberName("LegendTitle");
                 userType.AddMemberName("PlotAreaStyle");
                 userType.AddMemberName("Palette");
-                userType.AddMemberName("Title");
                 userType.AddMemberName("TitleStyle");
                 xamlType = userType;
                 break;
@@ -794,105 +794,105 @@ namespace BandGraph2.BandGraph2_XamlTypeInfo
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)instance;
             return that.LegendItems;
         }
-        private object get_2_Chart_LegendStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendStyle;
-        }
-        private void set_2_Chart_LegendStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_3_Chart_Axes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.Axes;
-        }
-        private void set_3_Chart_Axes(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
-        }
-        private object get_4_IAxis_Orientation(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.Orientation;
-        }
-        private void set_4_IAxis_Orientation(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
-        }
-        private object get_5_IAxis_RegisteredListeners(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.RegisteredListeners;
-        }
-        private object get_6_IAxis_DependentAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.DependentAxes;
-        }
-        private object get_7_Chart_ActualAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ActualAxes;
-        }
-        private object get_8_Chart_ChartAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ChartAreaStyle;
-        }
-        private void set_8_Chart_ChartAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_9_Chart_LegendItems(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendItems;
-        }
-        private object get_10_Chart_LegendTitle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendTitle;
-        }
-        private void set_10_Chart_LegendTitle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendTitle = (global::System.Object)Value;
-        }
-        private object get_11_Chart_PlotAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.PlotAreaStyle;
-        }
-        private void set_11_Chart_PlotAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_12_Chart_Palette(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.Palette;
-        }
-        private void set_12_Chart_Palette(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
-        }
-        private object get_13_Chart_Title(object instance)
+        private object get_2_Chart_Title(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Title;
         }
-        private void set_13_Chart_Title(object instance, object Value)
+        private void set_2_Chart_Title(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Title = (global::System.Object)Value;
+        }
+        private object get_3_Chart_LegendStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendStyle;
+        }
+        private void set_3_Chart_LegendStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_4_Chart_Axes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.Axes;
+        }
+        private void set_4_Chart_Axes(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
+        }
+        private object get_5_IAxis_Orientation(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.Orientation;
+        }
+        private void set_5_IAxis_Orientation(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
+        }
+        private object get_6_IAxis_RegisteredListeners(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.RegisteredListeners;
+        }
+        private object get_7_IAxis_DependentAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.DependentAxes;
+        }
+        private object get_8_Chart_ActualAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ActualAxes;
+        }
+        private object get_9_Chart_ChartAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ChartAreaStyle;
+        }
+        private void set_9_Chart_ChartAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_10_Chart_LegendItems(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendItems;
+        }
+        private object get_11_Chart_LegendTitle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendTitle;
+        }
+        private void set_11_Chart_LegendTitle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendTitle = (global::System.Object)Value;
+        }
+        private object get_12_Chart_PlotAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.PlotAreaStyle;
+        }
+        private void set_12_Chart_PlotAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_13_Chart_Palette(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.Palette;
+        }
+        private void set_13_Chart_Palette(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
         }
         private object get_14_Chart_TitleStyle(object instance)
         {
@@ -1389,83 +1389,83 @@ namespace BandGraph2.BandGraph2_XamlTypeInfo
                 xamlMember.Getter = get_1_ISeries_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
+                userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
+                xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "Title", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_Chart_Title;
+                xamlMember.Setter = set_2_Chart_Title;
+                break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendStyle":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "LegendStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_Chart_LegendStyle;
-                xamlMember.Setter = set_2_Chart_LegendStyle;
+                xamlMember.Getter = get_3_Chart_LegendStyle;
+                xamlMember.Setter = set_3_Chart_LegendStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Axes":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "Axes", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_3_Chart_Axes;
-                xamlMember.Setter = set_3_Chart_Axes;
+                xamlMember.Getter = get_4_Chart_Axes;
+                xamlMember.Setter = set_4_Chart_Axes;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.Orientation":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "Orientation", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation");
-                xamlMember.Getter = get_4_IAxis_Orientation;
-                xamlMember.Setter = set_4_IAxis_Orientation;
+                xamlMember.Getter = get_5_IAxis_Orientation;
+                xamlMember.Setter = set_5_IAxis_Orientation;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.RegisteredListeners":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "RegisteredListeners", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>");
-                xamlMember.Getter = get_5_IAxis_RegisteredListeners;
+                xamlMember.Getter = get_6_IAxis_RegisteredListeners;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.DependentAxes":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "DependentAxes", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_6_IAxis_DependentAxes;
+                xamlMember.Getter = get_7_IAxis_DependentAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ActualAxes":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "ActualAxes", "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_7_Chart_ActualAxes;
+                xamlMember.Getter = get_8_Chart_ActualAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ChartAreaStyle":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "ChartAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_Chart_ChartAreaStyle;
-                xamlMember.Setter = set_8_Chart_ChartAreaStyle;
+                xamlMember.Getter = get_9_Chart_ChartAreaStyle;
+                xamlMember.Setter = set_9_Chart_ChartAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendItems":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.Collection`1<Object>");
-                xamlMember.Getter = get_9_Chart_LegendItems;
+                xamlMember.Getter = get_10_Chart_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendTitle":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "LegendTitle", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_Chart_LegendTitle;
-                xamlMember.Setter = set_10_Chart_LegendTitle;
+                xamlMember.Getter = get_11_Chart_LegendTitle;
+                xamlMember.Setter = set_11_Chart_LegendTitle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.PlotAreaStyle":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "PlotAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_Chart_PlotAreaStyle;
-                xamlMember.Setter = set_11_Chart_PlotAreaStyle;
+                xamlMember.Getter = get_12_Chart_PlotAreaStyle;
+                xamlMember.Setter = set_12_Chart_PlotAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Palette":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "Palette", "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_Chart_Palette;
-                xamlMember.Setter = set_12_Chart_Palette;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
-                userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
-                xamlMember = new global::BandGraph2.BandGraph2_XamlTypeInfo.XamlMember(this, "Title", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_Chart_Title;
-                xamlMember.Setter = set_13_Chart_Title;
+                xamlMember.Getter = get_13_Chart_Palette;
+                xamlMember.Setter = set_13_Chart_Palette;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.TitleStyle":
                 userType = (global::BandGraph2.BandGraph2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");

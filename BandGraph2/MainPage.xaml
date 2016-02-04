@@ -13,7 +13,7 @@
 
         <TextBlock x:Name="HR" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Light" Width="122" Height="65" Foreground="White" FontSize="48" Text="HR"/>
 
-        <Charting:Chart x:Name="LineChart" Height="511" Width="500">
+        <Charting:Chart x:Name="LineChart" Height="511" Width="500" Title="Graph of Heart Rate">
             <Charting:LineSeries Margin="0" IndependentValuePath="date" DependentValuePath="rate" IsSelectionEnabled="True">
                 <Charting:LineSeries.DataPointStyle>
                     <Style TargetType="Charting:LineDataPoint">
@@ -49,7 +49,7 @@
                 <Charting:LinearAxis Orientation="X" ShowGridLines="False">
                     <Charting:LinearAxis.AxisLabelStyle>
                         <Style TargetType="Charting:AxisLabel">
-                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Setter Property="StringFormat" Value=""></Setter>
                         </Style>
                     </Charting:LinearAxis.AxisLabelStyle>
                 </Charting:LinearAxis>
