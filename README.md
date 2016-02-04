@@ -11,3 +11,4 @@ Just playing with the MS Band API. I got the app to graph my heart rate, and exp
 - Power BI implementation/live feed to PBI?
 - Upgrade from a WP8.1 app to a Windows 10 Universal app, and enable desktop compatibility
 - Export to a .xlsx file
+- User statistics such as: Mean, Median, Mode, Variance, Rance, etc. 
