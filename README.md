@@ -1,6 +1,5 @@
 # HeartRate Graph for the Microsoft Band and Windows Phone 8.1+
-Just playing with the MS Band API. I got the app to graph my heart rate, and export the heart rate to a CSV. This project is horribly under construction and there are zero UX considerations so the UI and UX is really bad. Improvements are in the works.
-
+Just playing with the MS Band API. I got the app to graph my heart rate, and export the heart rate to a CSV.
 # TO-DO
 - Add hover activities on graph (view individual data points)
 - Possible zoom into graph
